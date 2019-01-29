@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="hadoop map-reduce java,">
 
 
 
@@ -79,13 +79,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="提米的博客">
-<meta property="og:url" content="https://github.com/katncandix2/index.html">
+<meta name="description" content="hadoop 初识###引言 其实10月份的时候就有意愿想学一学web之外的，于是咬牙买了本《Hadoop权威指南》砖头书。作为学习hadoop 底层机制以及原理的书，自己阅读下来感觉还是非常不错的。但是需要实践的话，我觉得还是需要看一些教程以及写一些实际的代码来使用才能体会到的。 ####hadoop 简介 个人目前还在学习阶段对于hadoop 认识有几个方面 1.存储(hdfs)hadoop">
+<meta name="keywords" content="hadoop map-reduce java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hadoop初识">
+<meta property="og:url" content="https://github.com/katncandix2/2019/01/29/hadoop初识/index.html">
 <meta property="og:site_name" content="提米的博客">
+<meta property="og:description" content="hadoop 初识###引言 其实10月份的时候就有意愿想学一学web之外的，于是咬牙买了本《Hadoop权威指南》砖头书。作为学习hadoop 底层机制以及原理的书，自己阅读下来感觉还是非常不错的。但是需要实践的话，我觉得还是需要看一些教程以及写一些实际的代码来使用才能体会到的。 ####hadoop 简介 个人目前还在学习阶段对于hadoop 认识有几个方面 1.存储(hdfs)hadoop">
 <meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="https://github.com/katncandix2/2019/01/29/hadoop初识/hdfsarchitecture.png">
+<meta property="og:image" content="https://github.com/katncandix2/2019/01/29/hadoop初识/1024555-20161218163120151-452283750.png">
+<meta property="og:updated_time" content="2019-01-29T05:56:21.973Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="提米的博客">
+<meta name="twitter:title" content="hadoop初识">
+<meta name="twitter:description" content="hadoop 初识###引言 其实10月份的时候就有意愿想学一学web之外的，于是咬牙买了本《Hadoop权威指南》砖头书。作为学习hadoop 底层机制以及原理的书，自己阅读下来感觉还是非常不错的。但是需要实践的话，我觉得还是需要看一些教程以及写一些实际的代码来使用才能体会到的。 ####hadoop 简介 个人目前还在学习阶段对于hadoop 认识有几个方面 1.存储(hdfs)hadoop">
+<meta name="twitter:image" content="https://github.com/katncandix2/2019/01/29/hadoop初识/hdfsarchitecture.png">
 
 
 
@@ -115,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/katncandix2/">
+  <link rel="canonical" href="https://github.com/katncandix2/2019/01/29/hadoop初识/">
 
 
 
 
 
-  <title>提米的博客</title>
+  <title>hadoop初识 | 提米的博客</title>
   
 
 
@@ -140,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -214,9 +221,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -246,9 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/29/hadoop初识/" itemprop="url">hadoop初识</a></h1>
+          <h1 class="post-title" itemprop="name headline">hadoop初识</h1>
         
 
         <div class="post-meta">
@@ -298,9 +303,7 @@
       
 
       
-        
-          
-            <h2 id="hadoop-初识"><a href="#hadoop-初识" class="headerlink" title="hadoop 初识"></a>hadoop 初识</h2><p>###引言</p>
+        <h2 id="hadoop-初识"><a href="#hadoop-初识" class="headerlink" title="hadoop 初识"></a>hadoop 初识</h2><p>###引言</p>
 <p><em>其实10月份的时候就有意愿想学一学web之外的，于是咬牙买了本《Hadoop权威指南》砖头书。<br>作为学习hadoop 底层机制以及原理的书，自己阅读下来感觉还是非常不错的。但是需要实践的话，我觉得还是需要看一些教程以及写一些实际的代码来使用才能体会到的。</em></p>
 <p>####hadoop <a href="https://zh.wikipedia.org/wiki/Apache_Hadoop" target="_blank" rel="noopener">简介</a></p>
 <p>个人目前还在学习阶段<br>对于hadoop 认识有几个方面</p>
@@ -330,8 +333,6 @@
 <p>我们通过指定Mapper  与Reducer 以及<br>文件的输入输出即可</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">public class WordCountRunner &#123;</span><br><span class="line"></span><br><span class="line">    public static void  main(String []args) throws IOException, ClassNotFoundException, InterruptedException &#123;</span><br><span class="line"></span><br><span class="line">        Configuration conf = new Configuration();</span><br><span class="line"></span><br><span class="line">        Job job = Job.getInstance(conf);</span><br><span class="line"></span><br><span class="line">        job.setJarByClass(WordCountRunner.class);</span><br><span class="line"></span><br><span class="line">        //当前job 使用的mapper 和 reducer</span><br><span class="line">        job.setMapperClass(WordCountMapper.class);</span><br><span class="line">        job.setReducerClass(WordCountReducer.class);</span><br><span class="line"></span><br><span class="line">        //设置reducer 输出 k-v 格式</span><br><span class="line">        job.setOutputKeyClass(Text.class);</span><br><span class="line">        job.setOutputValueClass(LongWritable.class);</span><br><span class="line"></span><br><span class="line">        //设置mapper 输出 k-v 格式</span><br><span class="line">        job.setMapOutputKeyClass(Text.class);</span><br><span class="line">        job.setMapOutputValueClass(LongWritable.class);</span><br><span class="line"></span><br><span class="line">        //指定input 文件路径</span><br><span class="line">        FileInputFormat.setInputPaths(job,new Path(&quot;hdfs://ruiqingu.com:9000/wc/srcdata/&quot;));</span><br><span class="line">        FileOutputFormat.setOutputPath(job,new Path(&quot;hdfs://ruiqingu.com:9000/wc/output1/&quot;));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        job.waitForCompletion(true);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -346,152 +347,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/katncandix2/2019/01/07/从一道算法题说起/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="张提米">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="提米的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/07/从一道算法题说起/" itemprop="url">从一道算法题说起</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-07T15:00:18+08:00">
-                2019-01-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/hadoop-map-reduce-java/" rel="tag"># hadoop map-reduce java</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最近周围同事又兴起了刷题的潮流…</p>
-<p>作为主业养猫（铲屎）副业上班写代码的c渣渣 爱好者</p>
-<p>今天打算先从一道leecode 的<a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" rel="noopener">反转链表</a>说起</p>
-<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>作为笔试经典例题反转链表主要考察对于【链表】以及【指针】的掌握程度</p>
-<p>题目的解决方式一眼就可以看出</p>
-<p>然而实际的编码过程可能会出现这样或那样的错误导致无法ac</p>
-<p>以这一题为例我们将解题分为三个步骤</p>
-<h2 id="读题"><a href="#读题" class="headerlink" title="读题"></a>读题</h2><p>Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL</p>
-<p>Output: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL</p>
-<p>我们通过读题知道我们需要返回一个链表的【逆序】</p>
-<p>并根据题目描述得知我们的预期输出应是【反转链表后】的头指针</p>
-<h2 id="解决策略"><a href="#解决策略" class="headerlink" title="解决策略"></a>解决策略</h2><p>很多笔试的时候我们都会犯一个很大的错误</p>
-<p>【一上来就写】</p>
-<p>其实更好的做法是树立如何解决</p>
-<p>以这一题为例</p>
-<p>1.如果链表只有一个元素或者没有元素 我们直接返回即可 </p>
-<p>2.当链表有一个以上的元素,我们就需要进行如下操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.记录当前节点的下一节点</span><br><span class="line">2.将当前节点指向前一个节点</span><br><span class="line">3.将我们的游标指向下一节点直到下一节点为空</span><br></pre></td></tr></table></figure></p>
-<h2 id="coding"><a href="#coding" class="headerlink" title="coding"></a>coding</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ListNode* <span class="title">reverseList</span><span class="params">(ListNode* head)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(head == <span class="literal">nullptr</span> || head-&gt;next == <span class="literal">nullptr</span>)&#123;</span><br><span class="line">	    <span class="keyword">return</span> head;</span><br><span class="line">	&#125;</span><br><span class="line">	  </span><br><span class="line">	<span class="comment">//pre 用于让当前指针指向前一个节点 next 用于记录当前指针的下一个节点 </span></span><br><span class="line">	ListNode *pre  = <span class="literal">nullptr</span>;</span><br><span class="line">	ListNode *next = <span class="literal">nullptr</span>;</span><br><span class="line">    </span><br><span class="line">	<span class="keyword">while</span>(head!=<span class="literal">nullptr</span>)&#123;</span><br><span class="line">		<span class="comment">//当前节点第下一节点先存储下来</span></span><br><span class="line">		next = head-&gt;next;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//当前节点指向上一节点</span></span><br><span class="line">		head-&gt;next = pre;</span><br><span class="line">		<span class="comment">//pre 指向当前节点</span></span><br><span class="line">		pre = head;</span><br><span class="line">		head = next;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> pre;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="写在后面的"><a href="#写在后面的" class="headerlink" title="写在后面的"></a>写在后面的</h2><p>blog 主要以几个方向为主 算法、后台应用、一些小技巧..</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/07/从一道算法题说起/" rel="next" title="从一道算法题说起">
+                <i class="fa fa-chevron-left"></i> 从一道算法题说起
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -501,10 +386,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -512,6 +398,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -532,8 +422,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -584,6 +483,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hadoop-初识"><span class="nav-number">1.</span> <span class="nav-text">hadoop 初识</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -717,6 +632,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
