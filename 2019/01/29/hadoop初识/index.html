@@ -87,13 +87,13 @@
 <meta property="og:site_name" content="提米的博客">
 <meta property="og:description" content="hadoop 初识 引言 其实10月份的时候就有意愿想学一学web之外的，于是咬牙买了本《Hadoop权威指南》砖头书。作为学习hadoop 底层机制以及原理的书，自己阅读下来感觉还是非常不错的。但是需要实践的话，我觉得还是需要看一些教程以及写一些实际的代码来使用才能体会到的。 hadoop 简介 个人目前还在学习阶段对于hadoop 认识有几个方面 1.存储(hdfs)hadoop 对于很大的文">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="https://github.com/katncandix2/2019/01/29/hadoop初识/hdfsarchitecture.png">
-<meta property="og:image" content="https://github.com/katncandix2/2019/01/29/hadoop初识/1024555-20161218163120151-452283750.png">
-<meta property="og:updated_time" content="2019-01-29T06:03:47.278Z">
+<meta property="og:image" content="http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png">
+<meta property="og:image" content="https://images2015.cnblogs.com/blog/1024555/201612/1024555-20161218163120151-452283750.png">
+<meta property="og:updated_time" content="2019-01-29T06:08:18.107Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hadoop初识">
 <meta name="twitter:description" content="hadoop 初识 引言 其实10月份的时候就有意愿想学一学web之外的，于是咬牙买了本《Hadoop权威指南》砖头书。作为学习hadoop 底层机制以及原理的书，自己阅读下来感觉还是非常不错的。但是需要实践的话，我觉得还是需要看一些教程以及写一些实际的代码来使用才能体会到的。 hadoop 简介 个人目前还在学习阶段对于hadoop 认识有几个方面 1.存储(hdfs)hadoop 对于很大的文">
-<meta name="twitter:image" content="https://github.com/katncandix2/2019/01/29/hadoop初识/hdfsarchitecture.png">
+<meta name="twitter:image" content="http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png">
 
 
 
@@ -308,8 +308,8 @@
 <p><em>其实10月份的时候就有意愿想学一学web之外的，于是咬牙买了本《Hadoop权威指南》砖头书。<br>作为学习hadoop 底层机制以及原理的书，自己阅读下来感觉还是非常不错的。但是需要实践的话，我觉得还是需要看一些教程以及写一些实际的代码来使用才能体会到的。</em></p>
 <p>hadoop <a href="https://zh.wikipedia.org/wiki/Apache_Hadoop" target="_blank" rel="noopener">简介</a></p>
 <p>个人目前还在学习阶段<br>对于hadoop 认识有几个方面</p>
-<p>1.存储(hdfs)<br>hadoop 对于很大的文件诸如日志、海量数据(几十个G或者tb级别)的支持是非常完善的<br>hadoop 的解决方案是将一个大的文件切分成多个数据块存储于dataNode上(通过设置副本数)来解决如何备份的问题<br>由于数据是分散存在于各个dataNode 上的因此需要一个nameNode 进行记录数据的存储映射<br><img src="hdfsarchitecture.png" alt=""></p>
-<p>2.map-reduce 比如我们学习排序算法、其中的【归并排序】就是使用的 map-reduce的思路<br>而hadoop 中的 map-reduce 则是帮我们解决了如何在分布式的环境下进行任务派发（map阶段）<br>以及如何将收集到的结果进行汇总（reduce阶段）<br>hadoop 很好的解决了分布式环境下的这一问题<br><img src="1024555-20161218163120151-452283750.png" alt=""></p>
+<p>1.存储(hdfs)<br>hadoop 对于很大的文件诸如日志、海量数据(几十个G或者tb级别)的支持是非常完善的<br>hadoop 的解决方案是将一个大的文件切分成多个数据块存储于dataNode上(通过设置副本数)来解决如何备份的问题<br>由于数据是分散存在于各个dataNode 上的因此需要一个nameNode 进行记录数据的存储映射<br><img src="http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/images/hdfsarchitecture.png" alt=""></p>
+<p>2.map-reduce 比如我们学习排序算法、其中的【归并排序】就是使用的 map-reduce的思路<br>而hadoop 中的 map-reduce 则是帮我们解决了如何在分布式的环境下进行任务派发（map阶段）<br>以及如何将收集到的结果进行汇总（reduce阶段）<br>hadoop 很好的解决了分布式环境下的这一问题<br><img src="https://images2015.cnblogs.com/blog/1024555/201612/1024555-20161218163120151-452283750.png" alt=""></p>
 <p>以一个词汇统计为例</p>
 <p>比如我们当前有一个文本文件存储内容如下</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">echo hello test init</span><br><span class="line">apple echo test iphone</span><br><span class="line">world next</span><br><span class="line">point print exit</span><br><span class="line">break orange</span><br></pre></td></tr></table></figure>
